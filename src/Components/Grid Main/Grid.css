@@ -1,0 +1,119 @@
+:root {
+  --border-radius: 32px;
+  --card-color: white;
+  --text-color: #a3a3a3;
+  --github: #262626;
+  --twitter: #1da1f2;
+  --twitter-darker: #0888d7;
+  --linkedin: #46b2e5;
+  --linkedin-darker: #159bda;
+  --padding: 32px;
+  --gap: 24px;
+  --num-cols: 4;
+  --row-height: 216px;
+  --icon-size: 94px;
+}
+
+.image-grid {
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-template-rows: repeat(var(--row-height));
+  gap: var(--gap);
+}
+
+.image-grid > .card {
+  width: 100%;
+  height: 100%;
+  min-height: 216px;
+}
+
+.card {
+  background-color: var(--card-color);
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+.my-info {
+  padding: var(--padding);
+  text-align: center;
+}
+
+.my-info h1 {
+  font-size: 3rem;
+}
+
+.my-info p {
+  color: var(--text-color);
+}
+
+.me-photos {
+  max-height: 216px;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--github);
+}
+
+.twitter {
+  background-color: var(--twitter);
+}
+
+.linkedin {
+  background-color: var(--linkedin);
+}
+
+.icon-media {
+  font-size: var(--icon-size);
+  color: white
+}
+
+.github .arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+.linkedin .arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--linkedin-darker);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.twitter .arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--twitter-darker);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

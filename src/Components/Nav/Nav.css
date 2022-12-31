@@ -1,0 +1,33 @@
+:root {
+  --text-color: #D7D7D7;
+  --border-radius:32px;
+}
+
+nav {
+}
+
+.filter {
+  background-color: var(--text-color);
+  border-radius: var(--border-radius);
+}
+
+.filter ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+  padding: 5px 5px;
+}
+
+.filter ul li{
+    padding: 2px 10px;
+    transition: .4s;
+    font-size: 1.2rem;
+}
+
+.active{
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: var(--border-radius);
+}
