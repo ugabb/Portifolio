@@ -37,6 +37,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.4s;
+}
+
+.card:hover {
+  box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.255);
+  height: 103%;
+  width: 103%;
 }
 
 .image-grid-col-2 {
@@ -63,6 +70,9 @@
 .me-photos {
   max-height: 216px;
 }
+.me-photos:hover {
+  box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.255);
+}
 
 .github {
   display: flex;
@@ -81,7 +91,7 @@
 
 .icon-media {
   font-size: var(--icon-size);
-  color: white
+  color: white;
 }
 
 .github .arrow-container {
@@ -117,3 +127,4 @@
   height: 30px;
   border-radius: 50%;
 }
+
