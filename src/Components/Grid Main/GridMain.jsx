@@ -33,11 +33,23 @@ const GridMain = () => {
         </div>
       </div>
       <div className="card image-grid-col-2">
-       <Project 
+        <Project
           title="Note App"
           description="An app  where you can set your annotations and stay focus in what is important to you!"
           image={NoteApp}
-       />
+          react={{
+            name: "React",
+            color: "#86CD84",
+          }}
+          mongoDb={{
+            name: "Mongo",
+            color: "#52A151",
+          }}
+          node={{
+            name: "Node",
+            color: "#86CD84",
+          }}
+        />
       </div>
       <div className="card linkedin">
         <AiFillLinkedin className="icon-media" />
@@ -52,10 +64,18 @@ const GridMain = () => {
         </div>
       </div>
       <div className="card image-grid-col-2">
-        <Project 
+        <Project
           title="Movie Lib"
           description="An app where you can search for movies and receive all importants information from an API!"
           image={MovieApp}
+          react={{
+            name: "React",
+            color: "#86CD84",
+          }}
+          node={{
+            name: "Node",
+            color: "#86CD84",
+          }}
         />
       </div>
     </div>
