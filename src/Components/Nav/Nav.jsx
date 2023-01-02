@@ -7,55 +7,26 @@ const Nav = () => {
   const [about, setAbout] = useState(false);
   const [media, setMedia] = useState(false);
 
-  const [filters, setFilters] = useState({
-    all: false,
-    projects: false,
-    about: false,
-    media: false,
-  });
-
   const handleFilter = (e) => {
+    
     const clicked = e.target.id;
-    setFilters({
-      all: false,
-      projects: false,
-      about: false,
-      media: false,
-    });
+    setAll(prev => prev = false);
+    setProjects(prev => prev = false);
+    setAbout(prev => prev = false);
+    setMedia(prev => prev = false);
 
-    if (clicked === "all") {
-      setFilters({
-        all: true
-      });
+    if(clicked === "all"){
+      setAll(prev => !prev)
     }
-    // if (clicked === "projects") {
-    //   setProjects((prev) => !prev);
-    // }
-    // if (clicked === "about") {
-    //   setAbout((prev) => !prev);
-    // }
-    // if (clicked === "media") {
-    //   setMedia((prev) => !prev);
-    // }
-
-    // const clicked = e.target.id;
-    // setAll(prev => prev = false);
-    // setProjects(prev => prev = false);
-    // setAbout(prev => prev = false);
-    // setMedia(prev => prev = false);
-
-    // if(clicked === "all"){
-    //   setAll(prev => !prev)
-    // }
-    // if(clicked === "projects"){
-    //   setProjects(prev => !prev)
-    // }
-    // if(clicked === "about"){
-    //   setAbout(prev => !prev)
-    // }
-    // if(clicked === "media"){
-    //   setMedia(prev => !prev)
-    // }
+    if(clicked === "projects"){
+      setProjects(prev => !prev)
+    }
+    if(clicked === "about"){
+      setAbout(prev => !prev)
+    }
+    if(clicked === "media"){
+      setMedia(prev => !prev)
+    }
   };
 
   return (

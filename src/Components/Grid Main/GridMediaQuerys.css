@@ -1,0 +1,56 @@
+@media screen and (max-width: 1000px) {
+  .image-grid {
+    padding: 16px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(216px);
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .image-grid {
+    grid-template-columns: 2;
+    grid-auto-flow: dense;
+  }
+  .image-grid .card {
+    margin-bottom: 16px auto;
+    width: 100%;
+    height: 100%;
+    min-height: 266px;
+    max-width: 95%;
+  }
+
+  .image-grid-col-1{
+    grid-column: span 1;
+  }
+
+
+}
+@media screen and (max-width: 600px) {
+  .image-grid {
+    display: grid;
+
+}
+  .image-grid .card {
+   
+  }
+
+  .img-grid{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .github{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .learn-path{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:4;
+  }
+}

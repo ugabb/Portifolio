@@ -9,6 +9,10 @@
   height: 100%;
 }
 
+.project-title{
+  display: none;
+}
+
 .project-image {
   object-fit: cover;
   width: 50%;
