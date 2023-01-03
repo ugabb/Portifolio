@@ -76,6 +76,11 @@
 .image-grid-col-2 {
   grid-column: span 2;
 }
+
+.image-grid-col-1{
+  grid-column: span 0;
+}
+
 .image-grid-row-2 {
   grid-row: span 2;
 }

@@ -18,7 +18,7 @@ import Project from "../Project/Project";
 const GridMain = () => {
   return (
     <div className="image-grid ">
-      <div className="card image-grid-col-3 my-info">
+      <div className="card image-grid-col-3 image-grid-col-1 my-info">
         <h1>Gabriel Barros</h1>
         <h3>Web Developer</h3>
         <p>
